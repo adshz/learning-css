@@ -19,25 +19,69 @@
     }
 
     .card {
-      padding-left: 24px;
-      padding-right: 12px;
-      padding-bottom: 42px;
-      margin: 8px 10px 0px;
+      color: #fff;
+      padding: 32px;
+      margin: 8px 10px;
+      border-radius: 12px;
+      min-width: 300px;
+    }
 
+    .card button {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+
+    .ux-card__bg-img {
+      background-image:
+               linear-gradient(
+          135deg,
+          rgba(147, 112, 219, 0.85),    /* Lighter purple */
+          rgba(103, 58, 183, 0.9)       /* Darker purple */
+        ),
+        url("./asset/macBook-and-mouse.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .bootcamp-card__bg-img {
+      background-image: 
+        linear-gradient(
+            rgba(63, 81, 181, 0.85),  /* Solid blue with high opacity */
+            rgba(63, 81, 181, 0.85)   /* Same color maintained throughout */
+          ),
+        url("./asset/person-using-laptop-unsplash.jpg");
+      background-size: cover;
     }
   </style>
 </head>
 <body>
   <div class="card-wrapper">
     <!-- this is a wrapper -->
-    <div class="card background-purple">
+    <div class="card background-purple ux-card__bg-img">
       <!-- card wrapper -->
       <h2>UX Research</h2>
       <p>UI enim and minim veniam, quis nostrud exercitation ulamco laboris nisl
       ut aliqulp ex ea commodo consequat</p>
       <button>LEARN MORE</button>
     </div>
-    <div class="card background-blue">
+    <div class="card background-blue bootcamp-card__bg-img">
       <h2>Bootcamp</h2>
       <p>UI enim and minim veniam, quis nostrud exercitation ulamco laboris nisl
       ut aliqulp ex ea commodo consequat</p>
