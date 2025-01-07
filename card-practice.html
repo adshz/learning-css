@@ -17,10 +17,11 @@
 	  .card-wrapper {
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 32px auto;
 	  }
 
     .background-purple {
@@ -42,6 +43,13 @@
       margin: 8px 10px;
       border-radius: 12px;
       min-width: 300px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
     }
 
     .card button {
@@ -56,6 +64,13 @@
       font-weight: bold;
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+    }
+
+    .card button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
     }
 
     .card h2 {
